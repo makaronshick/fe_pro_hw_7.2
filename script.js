@@ -5,11 +5,11 @@
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 */
 
-function curry(x){
-  return function(y){
-      return x + y;
+function curry(num1){
+  return function(num2){
+      return num1 * num2;
   }
 }
 
-const sum = curry(15)(5);
-console.log(sum);
+const productOfNumbers = curry(15)(5);
+console.log(productOfNumbers);
